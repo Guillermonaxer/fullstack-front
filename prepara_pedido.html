@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pizzas Full Stack</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+ 
+  <body>
+    <div id="alertas"></div>
+    <form class="form" id="form" action="http://localhost:5000/pizza" method="post">      <div>
+        <img
+          src="images/pizza.webp"
+          height="100px"
+          width="100px"
+          title="Pizzas Full Stack"
+          alt="Pizzas Full Stack"
+        />
+        <div class="derecha">
+          <h1>Pizzas Full Stack</h1>
+        </div>
+      </div>
+      <div class="datoscliente">
+        <h2>Datos del cliente</h2>
+
+        <div class="grupo">
+          <div>
+            <label class="labelcliente" id="nombrelabel"for="nombre">Nombre </label>
+            <input class="element" id="nombre" name="nombre" />
+          </div>
+          <div>
+            <label class="labelcliente" id="apellidoslabel"for="apellidos">Apellidos </label>
+            <input class="element" id="apellidos" name="apellidos" />
+          </div>
+          <div>
+            <label class="labelcliente" for="fecha">Fecha de nacimiento </label>
+            <input class="element" type="date" name="nombre" />
+          </div>
+          <div>
+            <label class="labelcliente" for="numero">Numero de telefono</label>
+            <input class="element" name="numero" />
+          </div>
+          <div>
+            <label class="labelcliente" for="direccion">Direccion postal</label>
+            <textarea class="element" rows="1" cols="40"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="datospedido">
+        <h2>Datos del pedido</h2>
+        <div class="grupo">
+          <div>
+            <label class="element" for="tamaño">Tamaño</label>
+            <select class="element" id="tamaño" name="tamaño">
+              <option name="pequeña" value="pequeña">pequeña</option>
+              <option name="mediana" value="mediana">mediana</option>
+              <option name="grande" value="grande">grande</option>
+            </select>
+          </div>
+          <div>
+            <p>Ingredientes</p>
+              <div style="display:inline-flex">
+              <label for="jamon_jork">Jamón jork</label>
+              <input type="checkbox" id="jamon_jork" name="jamon_jork">
+          
+              <label for="champiñones">champiñones</label>
+              <input type="checkbox" id="champiñones" name="champiñones">
+          
+              <label for="Pepperoni">Pepperoni</label>
+              <input type="checkbox" id="Pepperoni" name="Pepperoni">
+          
+              <label for="Aceitunas">Aceitunas</label>
+              <input type="checkbox" id="Aceitunas" name="Aceitunas">
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/scriptjquery.js"></script>
+  
+
+</html>

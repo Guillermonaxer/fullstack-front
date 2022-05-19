@@ -1,0 +1,73 @@
+.datospedido {
+  background-color: #40ccbb;
+  margin: 3px;
+  padding: 6px;
+  border-radius: 3px;
+
+}
+
+.datoscliente {
+  background-color: #55ccff;
+  margin: 3px;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.form {
+  font-family: Verdana;
+}
+
+.derecha {
+  float: right;
+  right: 1%;
+}
+
+.element {
+  display: inline-block;
+}
+
+.grupo {
+  display: block;
+}
+
+.labelcliente {
+  display: inline-block;
+  width: 200px;
+}
+
+input {
+
+  border-radius: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  box-shadow: 0 0 0 3px orange;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px orange;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: black;
+  font-size: 17px;
+  padding: 9px;
+  text-decoration: none;
+}
+
